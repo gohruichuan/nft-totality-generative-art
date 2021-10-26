@@ -841,8 +841,8 @@ purrr::imap(seeds, function(seed, index) {
     if(bgcolorRNG <= 98){
         color <- "#FFFFFD"
         colorTraitName <- "Solar"
-        background_color <- "#051427"
-        # background_color <- "#000000"
+        # background_color <- "#051427"
+        background_color <- "#000000"
     }
     # else if (bgcolorRNG >= 91 && bgcolorRNG <= 98){
     #     colorTraitName <- "Lunar"
