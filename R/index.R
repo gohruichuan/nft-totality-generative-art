@@ -520,110 +520,110 @@ gen_plot <- function(df, file_name, x_polarity, y_polarity, filetype, color = "b
     (glowRNG >= 51 && (traitName == "Stellar Collision" || traitName == "Sirius" || traitName == "Baily's Beads" || traitName == "New Moon" || traitName == "Displacement of Star" || traitName == "Totality Eclipse" || traitName == "Ring of Fire"))) {
         plot <- df %>%
             ggplot2::ggplot(ggplot2::aes(x = x, y = y)) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)), colour = color, sigma = glowRNG ) +
-            with_outer_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)), colour = color, sigma = glowRNG ) +
+            with_outer_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)), colour = color, sigma = glowRNG ) +
 
 
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)), colour = color, sigma = glowRNG ) +
-            with_inner_glow( ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)), colour = color, sigma = glowRNG ) +
+            with_inner_glow( ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)), colour = color, sigma = glowRNG ) +
 
 
             ggplot2::theme_void() +
@@ -637,57 +637,57 @@ gen_plot <- function(df, file_name, x_polarity, y_polarity, filetype, color = "b
     } else {
          plot <- df %>%
             ggplot2::ggplot(ggplot2::aes(x = x, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)) +
-            ggplot2::geom_point(alpha = 0.1, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 1, x = x, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 2, x = x+x_1, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 3, x = x+x_2, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 4, x = x+x_3, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 5, x = x+x_4, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 6, x = x+x_5, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 7, x = x+x_6, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 8, x = x+x_7, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 9, x = x+x_8, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 10, x = x+x_9, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 11, x = x+x_10, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 12, x = x+x_11, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 13, x = x+x_12, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 14, x = x+x_13, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 15, x = x+x_14, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 16, x = x+x_15, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 17, x = x+x_16, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 18, x = x+x_17, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 19, x = x+x_18, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 20, x = x+x_19, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 21, x = x+x_20, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 22, x = x+x_21, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 23, x = x+x_22, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 24, x = x+x_23, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 25, x = x+x_24, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 26, x = x+x_25, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 27, x = x+x_26, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 28, x = x+x_27, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 29, x = x+x_28, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 30, x = x+x_29, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 31, x = x+x_30, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 32, x = x+x_31, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 33, x = x+x_32, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 34, x = x+x_33, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 35, x = x+x_34, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 36, x = x+x_35, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 37, x = x+x_36, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 38, x = x+x_37, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 39, x = x+x_38, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 40, x = x+x_39, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 41, x = x+x_40, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 42, x = x+x_41, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 43, x = x+x_42, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 44, x = x+x_43, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 45, x = x+x_44, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 46, x = x+x_45, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 47, x = x+x_46, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 48, x = x+x_47, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 49, x = x+x_48, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 50, x = x+x_49, y = y)) +
+            ggplot2::geom_point(alpha = 0.3, size = 0, shape = 20, color = color, aes(frame = 51, x = x+x_50, y = y)) +
             ggplot2::theme_void() +
             ggplot2::coord_fixed() +
             ggplot2::coord_polar() +

@@ -1,6 +1,4 @@
 index,Probability,trait,Color,Polarity,Density,x_trigonometricFunction,y_trigonometricFunction
-1,1 in 50260,Diamond Ring,Solar,Balanced,High,Tangent,Sine
-2,1 in 70925,Totality Eclipse,Solar,Balanced,Average,Sine,Cosine,Shiny
-3,1 in 54424,Black Dwarf Supernova,Solar,Balanced,Average,Arccotangent,Arccotangent
-4,1 in 10877,Cosmic Magnetism,Solar,Balanced,High,Cosine,Cosine
-5,1 in 71474,Totality Eclipse,Solar,Negative,Average,Sine,Cosine
+1,1 in 22117,Diamond Ring,Solar,Balanced,High,Tangent,Sine
+2,1 in 57150,Supernova,Solar,Balanced,Average,Arcsecant,Arcsecant
+3,1 in 29521,Diamond Ring,Solar,Negative,High,Tangent,Sine
