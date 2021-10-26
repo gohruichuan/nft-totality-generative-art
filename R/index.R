@@ -1,11 +1,11 @@
 # library(httr)
 # set_config(config(ssl_verifypeer = 0L))
 library(generativeart) # devtools::install_github("cutterkom/generativeart")
-library(pracma)
+library(pracma) # install.packages('pracma')
 library(jsonlite) # install.packages('jsonlite', dependencies=TRUE, repos='http://cran.rstudio.com/')
 # library("rjson")
-library(ggfx)
-library(gganimate)
+library(ggfx) # install.packages('ggfx')
+library(gganimate) # devtools::install_github("thomasp85/gganimate", ref="v0.1.1", force = TRUE), edit R folder to remove 'Read Only'
 # library(dplyr) # install.packages("dplyr") first
 # library(jasmines) # devtools::install_github("djnavarro/jasmines")
 # set the paths
