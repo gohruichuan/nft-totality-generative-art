@@ -275,16 +275,28 @@ getFomula <- function() {
         print("trait birth")
         list(
             trait = "Birth",
-            x = quote(x_polarity * x_i^sample(2:3, size =1) - sin(y_i^sample(-2:2, size =1)) * x_i^sample(-1:4, size =1)),
-            y = quote(y_polarity * y_i^sample(2:3, size =1) - cos(x_i^sample(-2:2, size =1)) * y_i^sample(-1:4, size =1))
+            x_polarity = runif(1, -1, 1),
+            y_polarity = runif(1, -1, 1),
+            x_iRNG = sample(2:3, size = 1),
+            y_iRNG = sample(2:3, size = 1),
+            x_trigonometricFunction = "Sine",
+            y_trigonometricFunction = "Cosine",
+            x = quote(x_polarity * x_i^x_iRNG - sin(y_i^sample(-2:2, size =1)) * x_i^sample(-1:4, size =1)),
+            y = quote(y_polarity * y_i^y_iRNG - cos(x_i^sample(-2:2, size =1)) * y_i^sample(-1:4, size =1))
         )
     }
     else if (rng >= 91 && rng <= 100){
         print("trait morph")
         list(
             trait = "Morph",
-            x = quote(x_polarity * x_i^sample(2:2, size = 1) - sin(y_i^sample(0:2, size = 1)) * x_i^sample(0:4, size =1)),
-            y = quote(y_polarity * y_i^sample(3:3, size = 1) - cos(x_i^sample(0:2, size = 1)) * y_i^sample(0:4, size = 1))
+            x_polarity = runif(1, -1, 1),
+            y_polarity = runif(1, -1, 1),
+            x_iRNG = 2,
+            y_iRNG = 3,
+            x_trigonometricFunction = "Sine",
+            y_trigonometricFunction = "Cosine",
+            x = quote(x_polarity * x_i^x_iRNG - sin(y_i^sample(0:2, size = 1)) * x_i^sample(0:4, size =1)),
+            y = quote(y_polarity * y_i^y_iRNG - cos(x_i^sample(0:2, size = 1)) * y_i^sample(0:4, size = 1))
         )
     }
 
